@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Future is Tomorrow</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Georgia, serif;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      backdrop-filter: brightness(0.9);
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.8em;
+      text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      backdrop-filter: blur(4px);
+    }
+
+    input[type="email"] {
+      padding: 12px;
+      width: 280px;
+      max-width: 90%;
+      font-size: 1em;
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 25px;
+      font-size: 1em;
+      border: none;
+      border-radius: 4px;
+      background-color: white;
+      color: black;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.2s ease-in-out;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>The future is tomorrow</h1>
+
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="email" name="email" placeholder="Enter your email" required />
+    <input type="submit" value="Notify Me" />
+  </form>
+</body>
+</html>
